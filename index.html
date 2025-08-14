@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Genda - SPA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+<header class="topbar slim">
+  <div class="logo">GENDA</div>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-link" data-link="home">Home</a>
+    <div class="dropdown">
+      <a href="#" class="nav-link dropbtn">About us ▾</a>
+      <div class="dropdown-content">
+        <a href="#" onclick="renderAbout('mission')">Mission</a>
+        <a href="#" onclick="renderAbout('vision')">Vision</a>
+        <a href="#" onclick="renderAbout('values')">Values</a>
+      </div>
+    </div>
+    <a href="index.html#services" class="nav-link" data-link="services">Services</a>
+    <a href="index.html#testimonials" class="nav-link" data-link="testimonials">Testimonials</a>
+    <a href="index.html#contact" class="nav-link" data-link="contact">Contact us</a>
+  </nav>
+  <div class="auth">
+    <a href="index.html#login" class="auth-btn">Login / Sign up</a>
+  </div>
+</header>
+
+  <main id="app" class="container" role="main"></main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-col">
+      <h3>Help</h3>
+      <ul class="footer-list-inline">
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="report.html">Report a problem</a></li>
+        <li><a href="safety.html">Safety guidelines</a></li>
+        <li><a href="how.html">How it works</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Nav</h3>
+      <ul class="footer-list-inline">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About us</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col contact-col">
+      <h3>Contact</h3>
+      <p><span class="icon">✉️</span> genda123@gmail.com</p>
+      <p><span class="icon">📞</span> +(250)795817004</p>
+    </div>
+    <div class="footer-bottom">© 2025 Genda. All Rights Reserved.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
